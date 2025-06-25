@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+            height: 100vh;
+            background: #abf0f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form {
+            width: 400px;
+            height: 450px;
+            background: white;
+            border: 1px solid rgb(1, 107, 152);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form h2 {
+            text-align: center;
+        }
+        button {
+            border-radius: 5px;
+            margin-top: 25px;
+            width: 300px;
+        }
+        button:hover {
+            background: #62baca;
+        }
+        input, select {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "form">
+        <h2>Form Đăng Ký</h2>
+        <p>Họ tên</p>
+        <input type="text">
+
+        <p>Email</p>
+        <input type="email">
+
+        <p>Điện thoại</p>
+        <input type="tel">
+
+        <p>Giới tính</p>
+        <select>
+            <option>Nam</option>
+            <option>Nữ</option>
+            <option>Khác</option>
+        </select>
+
+        <button>Gửi</button>
+    </div>
+</body>
+</html>
