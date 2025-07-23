@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Cá Nhân</h1>
+    <img src="https://picsum.photos/300" alt="Ảnh đại diện" class="profile-img">
+
+    <div class="portfolio">
+        <div class="project-card">
+            <img src="https://picsum.photos/200" alt="Dự án 1">
+            <h3>Dự án Landing Page</h3>
+            <p>Thiết kế website giới thiệu sản phẩm bằng HTML, CSS cơ bản.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://picsum.photos/200" alt="Dự án 2">
+            <h3>Website Bán Hàng</h3>
+            <p>Xây dựng giao diện bán hàng responsive dùng Bootstrap.</p>
+        </div> 
+        <div class="project-card">
+            <img src="https://picsum.photos/200" alt="Dự án 3">
+            <h3>Website Bán Hàng</h3>
+            <p>Xây dựng giao diện bán hàng responsive dùng Bootstrap.</p>
+        </div>
+    </div>
+</body>
+</html>
