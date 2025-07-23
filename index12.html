@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .survey-form {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .survey-form h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .options-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 30px;
+        }
+
+        .options-row label {
+            display: flex;
+            align-items: center;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background: #5649c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-form">
+    <h2>Khảo sát ý kiến</h2>
+    <form>
+        <div class="form-group">
+        <label>Bạn có hài lòng với dịch vụ của chúng tôi?</label>
+        <div class="options-row">
+            <label><input type="radio" name="satisfaction" value="very"> Rất hài lòng</label>
+            <label><input type="radio" name="satisfaction" value="satisfied"> Hài lòng</label>
+            <label><input type="radio" name="satisfaction" value="normal"> Bình thường</label>
+            <label><input type="radio" name="satisfaction" value="unsatisfied"> Không hài lòng</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+        <label>Bạn biết đến chúng tôi qua kênh nào? (Có thể chọn nhiều)</label>
+        <div class="options-row">
+            <label><input type="checkbox" name="channel" value="friend"> Bạn bè</label>
+            <label><input type="checkbox" name="channel" value="social"> Mạng xã hội</label>
+            <label><input type="checkbox" name="channel" value="ads"> Quảng cáo</label>
+            <label><input type="checkbox" name="channel" value="other"> Khác</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+        <label>Ý kiến khác của bạn:</label>
+        <textarea rows="4" placeholder="Nhập ý kiến của bạn..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Gửi khảo sát</button>
+    </form>
+    </div>
+</body>
+</html>
